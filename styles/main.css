@@ -32,7 +32,6 @@ a:not() {
 }
 
 img {
-    max-width: 100%;
     display: block;
 }
 
@@ -47,23 +46,26 @@ img {
 
     ul, li {
         font-family: "Montserrat", sans-serif;
-        font-weight: 400;  
-        d      
+        font-weight: 400;       
     }
 
     /* WRAPPER */
     .wrapper {
         display: flex;
         flex-direction: row-reverse;
+        width: 1200px;
+        margin: 0 auto;
     }
 
 
     /* MAIN-content */
     .main-content {
         box-sizing: border-box;
-        margin-left: 88px;
+        padding-left: 88px;
         padding-top: 80px;
-        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 80px;
+        
     }
 
 
@@ -237,21 +239,21 @@ img {
 
     /* ASSIDE */
 
-    aside {
+    .sidebar {
         width: 370px;
         background-color: #e0ebfe;
         padding-top: 40px;
         padding-bottom: 40px;
-        box-sizing: border-box;
-    }
+        }
 
-    .contacts, .tech, .soft {
-        padding-left: 40px;
-    }
+        .sidebar-content {
+            display: block;
+            padding-left: 40px;
+            padding-top: 40px;
+            padding-right: 40px;
+            box-sizing: border-box;
+        }
 
-    .contacts {
-        margin-top: 40px;
-    }
 
     .contacts-title {
         font-weight: 700;
@@ -281,7 +283,7 @@ img {
         color: #2979ff;
     }
 
-    .tech, .soft {
+    .tech {
         margin-top: 40px;
     }
 
@@ -289,37 +291,47 @@ img {
 
     }
 
-    .tech-title, .soft-title {
+    .tech-title {
         font-weight: 700;
         font-size: 22px;
         color: #161d2a;
         margin-bottom: 8px;
     }
 
-    .tech-skills, .soft-skills {
+    .tech-skills {
+        display: block;
         list-style-type: circle;
         padding-left: 16px;
     }
 
-    .tech-skills__item, .soft-skills__item {
+    .tech-skills__item {
         font-size: 14px;
         line-height: 171%;
         color: #161d2a;
     }
 
-    .tech-skills__item {
-
-    }
 
     .soft {
-        
+        margin-top: 40px;
+    }
+
+    .soft-title {
+        font-weight: 700;
+        font-size: 22px;
+        color: #161d2a;
+        margin-bottom: 8px;
     }
 
     .soft-skills {
+        display: block;
+        list-style-type: circle;
+        padding-left: 16px;
     }
 
     .soft-skills__item {
-
+        font-size: 14px;
+        line-height: 171%;
+        color: #161d2a;
     }
 
     /* SCROLLBAR */
@@ -342,7 +354,7 @@ img {
     
       ::-webkit-scrollbar-thumb { /* 5 - ползунок */
         border-radius: 3px;
-        background-color: #2979ff;
+        background-color: #6d9bf5;
       }
     
       ::-webkit-scrollbar-corner { /* 6 - уголок */
